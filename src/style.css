@@ -1,0 +1,768 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.home-body::before
+{
+    content: '';
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    box-shadow: 0 2px 2px black;
+    padding: 1rem 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: lightgray;
+}
+.navbar h1
+{
+    font-size: 1.5rem;
+    font-family: 'Satisfy';
+    font-weight: 100;
+    color: rgb(2, 2, 27);
+    letter-spacing: 3px;
+}
+.nav a
+{
+    margin: 0 1.5rem;
+    font-family: 'Ubuntu';
+    font-weight: 800;
+    color: rgb(34, 8, 8);
+    letter-spacing: 1px;
+}
+.nav a:hover{color: rgb(67, 67, 129);}
+
+.head1
+{
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid black;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+    margin: 4.5rem 2rem;
+    padding: 2rem 6rem;
+    align-items: center;
+}
+.head1 img
+{
+    width: 30rem;
+    height: 20rem;
+}
+.head1-content
+{
+    text-align: center;
+}
+.head1-content h1
+{
+    font-size: 4rem;
+}
+.head1-content h2
+{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: black;
+}
+.head1-content span
+{
+    color: rgb(8, 77, 8);
+}
+.head1-content button
+{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: rgb(174, 176, 177);
+    padding: 0.5rem 2rem;
+    font-family: 'Mate SC';
+    margin-bottom: 1rem;
+    color: rgb(77, 37, 8);
+    letter-spacing: 3px;
+    box-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+.head1-content button:hover
+{
+    background: rgb(175, 167, 167);
+    color: darkblue;
+}
+.content1
+{
+    margin-bottom: 4rem;
+}
+.content1 h1
+{
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.content1 span
+{
+    color: rgb(212, 13, 46);
+}
+.content1 h2
+{
+    font-weight: 700;
+}
+.content2 h1
+{
+    margin-bottom: 1rem;
+    font-family: 'Ubuntu';
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.services > h1
+{
+    text-align: center;
+    background-color: rgb(194, 189, 189);   
+    padding: 1rem 0;
+    font-family: 'Mate SC';
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: rgb(9, 9, 59);
+}
+.services-box
+{
+    display: flex;
+    border: 0;
+}
+.service-box
+{
+    box-shadow: 0 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    width: 50%;
+    cursor: grab;
+}
+.service-box:hover
+{
+    background-color: rgb(196, 224, 224);
+}
+.service-box h1
+{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.service-box h1 span
+{
+    color: rgb(94, 33, 43);
+}
+.service-box i
+{
+    font-size: 3rem;
+    color: rgb(16, 31, 31);
+}
+
+.product
+{
+    margin-top: 6rem;
+}
+.product > h1
+{
+    text-align: center;
+    background-color: rgb(194, 189, 189);   
+    padding: 1rem 0;
+    font-family: 'Mate SC';
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: rgb(9, 9, 59);
+}
+.product-box
+{
+    display: flex;
+    justify-content: center;
+}
+.product-boxes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 5px black;
+    padding: 2rem 4rem;
+    margin: 0 4rem;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    cursor: grab;
+}
+.product-boxes:hover
+{
+    background-color: lightgray;
+}
+.product-boxes img
+{
+    width: 20rem;
+    height: 20rem;
+}
+.product-boxes h1
+{
+    font-size: 3rem;
+    font-family: 'Changa';
+    font-weight: 800;
+}
+.contact 
+{
+    margin-top: 6rem;
+}
+.contact > h1
+{
+    text-align: center;
+    background-color: rgb(194, 189, 189);   
+    padding: 1rem 0;
+    font-family: 'Mate SC';
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: rgb(9, 9, 59);
+}
+.contact-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    margin-top: 2rem;
+}
+.content-head h1
+{
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Mate SC';
+    margin-bottom: 2rem;
+}
+.content-head h1 span
+{
+    color: darkmagenta;
+}
+.contact-content h2
+{
+    font-size: 2rem;
+    font-family: 'Dosis';
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(43, 11, 43);
+}
+.contact-form
+{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 6rem;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.contact-form h1
+{
+    font-size: 2rem;
+    font-family: 'Satisfy';
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+.contact-form input
+{
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    width: 420px;
+    background: transparent;
+    font-size: 1.5rem;
+    outline: 0;
+    font-family: 'Dosis';
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.line
+{
+    background-color: black;
+    width: 400px;
+    height: 2px;
+}
+.input-here button
+{
+    margin-top: 3rem;
+    background-color: rgb(102, 233, 135);
+    border: 0;
+    padding: 0.2rem 4rem;
+    font-size: 1.2rem;
+    font-family: 'Mate SC';
+    border-radius: 10px;
+    color: darkblue;
+    font-weight: 800;
+}
+.input-here button:hover
+{
+    background-color: rgb(132, 238, 132);
+    color: darkmagenta;
+}
+.footer
+{
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 4rem;
+}
+.footer h1
+{
+    font-size: 1.5rem;
+    font-family: 'Mate SC';
+    color: white;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+/* Mens Collection */
+
+.men-body::before
+{
+    content: '';
+    background: url('./images/img1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.men-navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    padding: 1rem 6rem;
+    box-shadow: 0 2px 5px black;
+    background-color: goldenrod;
+    z-index: 1001;
+    position: fixed;
+    width: 100%;
+}
+.men-navbar > a
+{
+    font-family: 'Mate SC';
+    font-size: 2rem;
+    color: black;
+    cursor: grab;
+}
+.men-navbar a span
+{
+    color: darkblue;
+}
+.men-nav1 button
+{
+    margin: 0 1rem;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.men-nav1 button:hover{color: darkblue;}
+.men-link
+{
+    margin: 0 1rem;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+.men-link:hover{color: purple;}
+.men-navbar h1
+{
+    font-size: 2rem;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+}
+.men-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8rem 1rem;
+}
+.men-boxes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    padding: 1rem 4rem;
+    box-shadow: 0 2px 20px black;
+    z-index: 1;
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(66, 8, 8),rgb(255, 102, 0));
+    cursor: grab;
+    margin: 3rem 3rem;
+    height: auto;
+}
+.men-boxes:hover
+{
+    background: linear-gradient(to right,rgb(90, 10, 10),rgb(255, 128, 44));
+}
+.men-boxes img
+{
+    width: 15rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+.men-boxes h1
+{
+    font-family: 'Mate SC';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: lightgreen;
+    letter-spacing: 2px;
+}
+.men-boxes i
+{
+    font-size: 1.2rem;
+    color: orange;
+    margin: 0 0.2rem 1rem 0;
+}
+.men-boxes p
+{
+    font-size: 1.5rem;
+    color: aquamarine;
+    font-weight: 100;
+    font-family: 'Mate SC';
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+.men-footer
+{
+    margin-top: -2rem;
+}
+
+/* Womens Collection */
+
+.women-body::before
+{
+    content: '';
+    background: url('./images/img3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    filter: brightness(0.5);
+}
+.women-navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    background-color: rgb(43, 40, 40);
+    padding: 1rem 6rem;
+    box-shadow: 0 2px 5px black;
+}
+.women-navbar > a
+{
+    font-size: 2rem;
+    font-family: 'Mate SC';
+    letter-spacing: 3px;
+    color: lightgrey;
+    font-weight: 100;
+    cursor: grab;
+}
+.women-navbar a span
+{
+    color: lawngreen;
+}
+.women-nav1 button
+{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: white;
+}
+.women-nav1 button:hover{color: lawngreen;}
+.women-link
+{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu';
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: white;
+}
+.women-link:hover{color: aqua;}
+.women-navbar h1
+{
+    font-size: 2rem;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+}
+.women-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8rem 1rem;
+}
+.women-boxes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    padding: 1rem 4rem;
+    box-shadow: 0 2px 20px black;
+    z-index: 1;
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(17, 17, 17),rgb(75, 70, 70));
+    cursor: grab;
+    margin: 3rem 3rem;
+}
+.women-boxes:hover
+{
+    background: linear-gradient(to right,rgb(41, 40, 40),rgb(109, 97, 97));
+}
+.women-boxes img
+{
+    width: 15rem;
+    height: 10rem;
+}
+.women-boxes h1
+{
+    font-family: 'Mate SC';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: lightgreen;
+    letter-spacing: 2px;
+}
+.women-boxes i
+{
+    font-size: 1.2rem;
+    margin: 0 0.2rem 1rem 0;
+    color: orange;
+}
+.women-boxes p
+{
+    font-size: 1.5rem;
+    color: aquamarine;
+    font-weight: 100;
+    font-family: 'Mate SC';
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.women-footer
+{
+    margin-top: -2rem;
+}
+
+/* Buy */
+
+.buy-body
+{
+    height: auto;
+    transition: 0.2s;
+}
+.buy-body::before
+{
+    background: url('./images/meet.jpg') no-repeat center center/cover;
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+}
+.buy-navbar
+{
+    background-color: rgb(32, 31, 31);
+    padding: 1.5rem 4rem;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+.buy-navbar h1
+{
+    color: white;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.buy-navbar h1 span
+{
+    color: lime;
+}
+.buy-navbar h1 i
+{
+    color: wheat;
+}
+.buy-nav .buy-navlink
+{
+    color: white;
+    font-weight: 100;
+}
+.buy-nav .buy-navlink:hover
+{
+    color: aqua;
+}
+.buy-container
+{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    align-items: center;
+}
+.buy-content 
+{
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    background-color: rgb(23, 23, 24);
+    opacity: 1;
+}
+.buy-content h1,h2,p
+{
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.buy-content h1
+{
+    font-size: 4rem;
+    font-family: 'Mate SC';
+    font-weight: 100;
+    color: aquamarine;
+}
+.buy-content h2
+{
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans';
+    font-weight: 100;
+}
+.buy-content p
+{
+    font-size: 2.5rem;
+    font-family: 'Cinzel';
+    color: lightgreen;
+}
+.buy-follow-link
+{
+    color: white;
+    font-size: 2rem;
+}
+.buy-follow-link a
+{
+    margin: 0 2rem;
+}
+.buy-follow-link a:hover
+{
+    color: aquamarine;
+}
+.buy-form form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 10rem;
+    border-radius: 20px;
+    background-color: rgb(18, 18, 56);
+}
+.buy-form form .input-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buy-form form .input-box h1
+{
+    color: white;
+    font-family: 'Josefin Sans';
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+.buy-form form .input-box h1 span
+{
+    color: lime;
+}
+.buy-form form .input-box label
+{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Calibri';
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.buy-form form .input-box input,textarea
+{
+    text-align: center;
+    background: transparent;
+    color: white;
+    outline: 0;
+    padding: 0.5rem 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-family: Dosis;
+    letter-spacing: 3px;
+}
+.buy-form .form-line
+{
+    background-color: white;
+    height: 1px;
+    filter: brightness(0.8);
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+.buy-form .input-box button
+{
+    color: white;
+    font-family: 'Mate SC';
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    background-color: rgb(25, 25, 85);
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    border: 0;
+    color: lime;
+    cursor: grab;
+    margin-top: 1rem;
+}
+.buy-form .input-box button:hover
+{
+    background-color: rgb(31, 31, 77);
+    color: aqua;
+}
+
